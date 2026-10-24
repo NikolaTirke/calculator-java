@@ -1,0 +1,29 @@
+ID	    Opis testa			                       Ulaz (expression)	  Očekivani izlaz		  Klasa ulaza
+TC_01  	Sabiranje dva cela broja		              "5+3"			            "8.0"		          Validna
+
+TC_02  	Oduzimanje dva cela broja		              "10-4"			          "6.0"		          Validna
+
+TC_03	  Množenje dva cela broja			              "4*3"			            "12.0"		        Validna
+
+TC_04	  Deljenje sa decimalnim rezultatom	        "5/2"			            "2.5"		          Validna
+
+TC_05	  Prioritet operatora 			                "2+3*4"			          "14.0"		        Validna
+	      (množenje pre sabiranja)	
+
+TC_06	  Izraz koji počinje znakom minus		        "-5+3"			          "-2.0"		        Validna
+
+TC_07	  Izraz koji počinje znakom plus		        "+5+3"			            "8.0"		        Validna
+
+TC_08	  Rad sa decimalnim brojevima		            "2.5*2"			            "5.0"		        Validna
+
+TC_09	  Deljenje pozitivnog broja nulom		          "5/0"			        "Infinity"	      Granična / Validna za float
+
+TC_10	  Deljenje negativnog broja nulom		          "-5/0"			      "-Infinity"	      Granična / Validna za float
+
+TC_11	  Unos teksta umesto brojeva		              "abc+2"			        "ERROR"		      Invalidna
+
+TC_12	  Prazan string				                          ""			          "ERROR"		      Invalidna
+
+TC_13	  Uzastopni operatori bez broja između	      "5++3"			        "ERROR"		      Invalidna
+
+TC_14	  Nedovršen izraz (operator na kraju)	          "5+"			        "ERROR"		      Invalidna
